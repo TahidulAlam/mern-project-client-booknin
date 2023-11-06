@@ -1,0 +1,27 @@
+[
+    {
+      "categoryName": "Web Development",
+      "bannerImageLink": "https://i.ibb.co/PGc6RGB/imgweb.png",
+      "description": "Web Development is the process of creating and maintaining websites. It encompasses a wide range of skills, including HTML, CSS, JavaScript, and web design. Web developers are in high demand, as businesses increasingly rely on the internet to reach customers and conduct business.",
+      "totalBooks": 100
+    },
+    {
+      "categoryName": "Java Programming",
+      "bannerImageLink": "https://i.ibb.co/J207LvK/imgJava.png",
+      "description": "Java is a general-purpose programming language that is widely used for developing applications for a wide range of platforms, including desktops, servers, and mobile devices. Java is known for its portability, platform independence, and object-oriented programming paradigm.",
+      "totalBooks": 80
+    },
+    {
+      "categoryName": "Software Engineering",
+      "bannerImageLink": "https://i.ibb.co/56TjDPv/imgSoft.png",
+      "description": "Software Engineering is the application of engineering principles to the design, development, testing, and deployment of software systems.",
+      "totalBooks": 120
+    },
+    {
+      "categoryName": "Technology",
+      "bannerImageLink": "https://i.ibb.co/tcwk0fB/imgTech.png",
+      "description": "Technology is the application of scientific knowledge for practical purposes, or to change and manipulate the physical world. Technology encompasses a vast range of fields, including computers, electronics, telecommunications, and transportation. Technology has played a major role in shaping modern society, and it continues to evolve at a rapid pace.",
+      "totalBooks": 150
+    }
+  ]
+  

@@ -1,0 +1,226 @@
+[
+    {
+        "book_name": "Unlocking Android",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg",
+        "author_name": ["W. Frank Ableson", "Charlie Collins", "Robi Sen"],
+        "category": "Java Programming",
+        "quantity": 4,
+        "ratings" :4.5,
+        "shortDescription": "A comprehensive guide to Android development, covering both open source concepts and mobile app development."
+    },
+    {
+        "book_name": "Android in Action, Second Edition",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg",
+        "author_name": ["W. Frank Ableson", "Robi Sen"],
+        "category": "Java Programming",
+        "quantity": 5,
+        "ratings" :3.5,
+        "shortDescription": "An updated edition of the Android in Action book, focusing on Java Programming-based Android development."
+    },
+    {
+        "book_name": "Specification by Example",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg",
+        "author_name": ["Gojko Adzic"],
+        "category": "Software Engineering",
+        "quantity": 6,
+        "ratings" :3.4,
+        "shortDescription": "A guide to the practice of specification by example, a software engineering technique for defining software requirements."
+    },
+    {
+        "book_name": "Flex 3 in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed.jpg",
+        "author_name": ["Tariq Ahmed with Jon Hirschi", "Faisal Abid"],
+        "category": "Technology",
+        "quantity": 9,
+        "ratings" :3.2,
+        "shortDescription": "A comprehensive book on developing web applications using Flex 3 Technology."
+    },
+    {
+        "book_name": "Flex 4 in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed2.jpg",
+        "author_name": ["Tariq Ahmed", "Dan Orlando", "John C. Bland II", "Joel Hooks"],
+        "category": "Technology",
+        "quantity": 4,
+        "ratings" :3.6,
+        "shortDescription": "An in-depth guide to developing web applications using Flex 4 Technology."
+    },
+    {
+        "book_name": "Collective Intelligence in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alag.jpg",
+        "author_name": ["Satnam Alag"],
+        "category": "Technology",
+        "quantity": 3,
+        "ratings" :3.7,
+        "shortDescription": "Exploring the principles and practices of collective intelligence in the context of web applications."
+    },
+    {
+        "book_name": "Zend Framework in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allen.jpg",
+        "author_name": ["Rob Allen", "Nick Lo", "Steven Brown"],
+        "category": ["Web Development"],
+        "quantity": 4,
+        "ratings" :3.3,
+        "shortDescription": "A practical guide to building web applications using the Zend Framework."
+    },
+    {
+        "book_name": "Flex on Java Programming",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allmon.jpg",
+        "author_name": ["Bernerd Allmon", "Jeremy Anderson"],
+        "category": "Technology",
+        "quantity": 2,
+        "ratings" :3.5,
+        "shortDescription": "A guide to integrating Flex with Java Programming for web application development."
+    },
+    {
+        "book_name": "Griffon in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/almiray.jpg",
+        "author_name": ["Andres Almiray", "Danno Ferrin", "James Shingler"],
+        "category": "Java Programming",
+        "quantity": 3,
+        "ratings" :3.7,
+        "shortDescription": "An introduction to Griffon, a dynamic Groovy-based web application framework."
+    },
+    {
+        "book_name": "OSGi in Depth",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alves.jpg",
+        "author_name": ["Alexandre de Castro Alves"],
+        "category": "Java Programming",
+        "quantity": 2,
+        "ratings" :3.2,
+        "shortDescription": "An in-depth exploration of the OSGi framework for Java Programming application development."
+    },
+    {
+        "book_name": "Flexible Rails",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/armstrong.jpg",
+        "author_name": ["Peter Armstrong"],
+        "category": ["Web Development"],
+        "quantity": 4,
+        "ratings" :3.3,
+        "shortDescription": "A guide to developing flexible web applications using the Rails framework."
+    },
+    {
+        "book_name": "Hello! Flex 4",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/armstrong3.jpg",
+        "author_name": ["Peter Armstrong"],
+        "category": "Technology",
+        "quantity": 3,
+        "ratings" :4.5,
+        "shortDescription": "An introductory book to the Flex 4 framework for buildin pplications."
+    },
+    {
+        "book_name": "Coffeehouse",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/asher.jpg",
+        "author_name": ["Levi Asher", "Christian Crumlish"],
+        "category": ["Web Development"],
+        "quantity": 1,
+        "ratings" :2.5,
+        "shortDescription": "A unique exploration of coffeehouse culture and its impact on society."
+    },
+    {
+        "book_name": "Team Foundation Server 2008 in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg",
+        "author_name": ["Jamil Azher"],
+        "category": ["Web Development"],
+        "quantity": 2,
+        "ratings" :4.5,
+        "shortDescription": "A practical guide to using Team Foundation Server 2008 for software development in .NET."
+    },
+    {
+        "book_name": "Brownfield Application Development in .NET",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/baley.jpg",
+        "author_name": ["Kyle Baley", "Donald Belcham"],
+        "category": ["Web Development"],
+        "quantity": 1,
+        "ratings" :5.0,
+        "shortDescription": "An exploration of developing applications in the .NET framework with a focus on existing software projects."
+    },
+    {
+        "book_name": "MongoDB in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/banker.jpg",
+        "author_name": ["Kyle Banker"],
+        "category": ["Web Development"],
+        "quantity": 3,
+        "ratings" :3.2,
+        "shortDescription": "A practical guide to working with MongoDB, a next-generation NoSQL database."
+    },
+    {
+        "book_name": "Distributed Application Development with PowerBuilder 6.0",
+        "author_name": ["Michael J. Barlotta"],
+        "category": ["Web Development"],
+        "quantity": 1,
+        "ratings" :3.6,
+        "shortDescription": "A guide to developing distributed applications using PowerBuilder 6.0."
+    },
+    {
+        "book_name": "Jaguar Development with PowerBuilder 7",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/barlotta2.jpg",
+        "author_name": ["Michael Barlotta"],
+        "category": "Software Engineering",
+        "quantity": 2,
+        "ratings" :3.9,
+        "shortDescription": "An exploration of developing applications with PowerBuilder 7, including client-server applications."
+    },
+    {
+        "book_name": "Taming Jaguar",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/barlotta3.jpg",
+        "author_name": ["Michael J. Barlotta", "Jason R. Weiss"],
+        "category": "Software Engineering",
+        "quantity": 1,
+        "ratings" :3.8,
+        "shortDescription": "A guide to taming Jaguar, focusing on the PowerBuilder development environment."
+    },
+    {
+        "book_name": "3D User Interfaces with Java Programming 3D",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/barrilleaux.jpg",
+        "author_name": ["Jon Barrilleaux"],
+        "category": "Software Engineering",
+        "quantity": 3,
+        "ratings" :3.5,
+        "shortDescription": "An exploration of 3D user interfaces using Java Programming 3D and computer graphics."
+    },
+    {
+        "book_name": "Hibernate in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bauer.jpg",
+        "author_name": ["Christian Bauer", "Gavin King"],
+        "category": "Java Programming",
+        "quantity": 4,
+        "ratings" :3.6,
+        "shortDescription": "A comprehensive guide to Hibernate, a popular object-relational mapping framework in Java Programming."
+    },
+    {
+        "book_name": "Hibernate in Action (Chinese Edition)",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bauer-cn.jpg",
+        "author_name": ["Christian Bauer", "Gavin King"],
+        "category": "Software Engineering",
+        "quantity": 1,
+        "ratings" :3.3,
+        "shortDescription": "The Chinese edition of the Hibernate in Action book, focusing on Java Programming-based Hibernate development."
+    },
+    {
+        "book_name": "Java Programming Persistence with Hibernate",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bauer2.jpg",
+        "author_name": ["Christian Bauer", "Gavin King"],
+        "category": "Java Programming",
+        "quantity": 3,
+        "ratings" :4.5,
+        "shortDescription": "Exploring Java Programming persistence with Hibernate, a widely used ORM Technology."
+    },
+    {
+        "book_name": "JSTL in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bayern.jpg",
+        "author_name": ["Shawn Bayern"],
+        "category": "Technology",
+        "quantity": 2,
+        "ratings" :3.2,
+        "shortDescription": "A practical guide to Java ProgrammingServer Pages Standard Tag Library (JSTL) for web application development."
+    },
+    {
+        "book_name": "iBATIS in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/begin.jpg",
+        "author_name": ["Clinton Begin", "Brandon Goodin", "Larry Meadors"],
+        "category": ["Web Development"],
+        "quantity": 3,
+        "ratings" :3.5,
+        "shortDescription": "An introduction to iBATIS, a framework for mapping SQL and Java Programming objects."
+    }
+]
