@@ -8,7 +8,7 @@ import axios from "axios";
 const Addbook = () => {
   const { user } = useAuth();
   // const axiospost = useAxios();
-  const url = "http://localhost:5000/api/bn/addbooks";
+  const url = "http://localhost:5000/api/bn/allbooks";
   const handleAddBook = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -123,14 +123,12 @@ const Addbook = () => {
                 id="grid-state"
                 name="category"
               >
-                <option value="software-engineering">
+                <option value="Software Engineering">
                   Software Engineering
                 </option>
-                <option value="Programming with Java">
-                  Programming with Java
-                </option>
+                <option value="Java Programming">Java Programming</option>
                 <option value="Technology">Technology</option>
-                <option value="web-development">Web Development</option>
+                <option value="Web Development">Web Development</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                 <svg

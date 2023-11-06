@@ -1,128 +1,82 @@
 [
     {
-        "imageLink": "https://example.com/book-image-1.jpg",
-        "name": "The Great Gatsby",
-        "quantity": 10,
-        "authorName": "F. Scott Fitzgerald",
-        "category": "Novel",
-        "shortDescription": "The Great Gatsby is a classic novel that tells the story of the enigmatic millionaire Jay Gatsby and his unrequited love for the beautiful Daisy Buchanan. Set in the roaring twenties, the novel explores themes of wealth, ambition, and the American Dream. Fitzgerald's exquisite prose and vivid characters make this book a must-read for anyone interested in American literature.",
-        "ratings": 4.5
+        "book_name": "Unlocking Android",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg",
+        "author_name": ["W. Frank Ableson", "Charlie Collins", "Robi Sen"],
+        "category": "Java Programming",
+        "quantity": 4,
+        "ratings" :4.5,
+        "shortDescription": "A comprehensive guide to Android development, covering both open source concepts and mobile app development."
     },
     {
-        "imageLink": "https://example.com/book-image-2.jpg",
-        "name": "To Kill a Mockingbird",
-        "quantity": 15,
-        "authorName": "Harper Lee",
-        "category": "Novel",
-        "shortDescription": "To Kill a Mockingbird is a powerful novel that tackles themes of racial injustice and moral growth. Set in the racially segregated American South, it tells the story of young Scout Finch, her brother Jem, and their father, lawyer Atticus Finch, as they navigate a town steeped in prejudice. The novel is a thought-provoking exploration of compassion, empathy, and the consequences of bigotry.",
-        "ratings": 4.4
+        "book_name": "Android in Action, Second Edition",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg",
+        "author_name": ["W. Frank Ableson", "Robi Sen"],
+        "category": "Java Programming",
+        "quantity": 5,
+        "ratings" :3.5,
+        "shortDescription": "An updated edition of the Android in Action book, focusing on Java Programming-based Android development."
     },
     {
-        "imageLink": "https://example.com/book-image-3.jpg",
-        "name": "1984",
-        "quantity": 12,
-        "authorName": "George Orwell",
-        "category": "Dystopian",
-        "shortDescription": "1984 is a dystopian masterpiece that envisions a totalitarian society where thought and speech are controlled by the oppressive Party and its leader, Big Brother. The novel follows the life of Winston Smith, who rebels against the surveillance state and dares to love in a world where love is a thoughtcrime. It's a chilling portrayal of a surveillance society and a warning about the dangers of authoritarianism.",
-        "ratings": 4.6
+        "book_name": "Specification by Example",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg",
+        "author_name": ["Gojko Adzic"],
+        "category": "Software Engineering",
+        "quantity": 6,
+        "ratings" :3.4,
+        "shortDescription": "A guide to the practice of specification by example, a software engineering technique for defining software requirements."
     },
     {
-        "imageLink": "https://example.com/book-image-4.jpg",
-        "name": "Pride and Prejudice",
-        "quantity": 20,
-        "authorName": "Jane Austen",
-        "category": "Classic",
-        "shortDescription": "Pride and Prejudice is a timeless classic that explores themes of love, class, and social norms in 19th-century England. The novel follows the spirited Elizabeth Bennet and her complicated relationship with the enigmatic Mr. Darcy. Jane Austen's sharp wit and keen observations of society make this a delightful read.",
-        "ratings": 4.3
-    },
-    {
-        "imageLink": "https://example.com/book-image-5.jpg",
-        "name": "The Hobbit",
-        "quantity": 8,
-        "authorName": "J.R.R. Tolkien",
-        "category": "Fantasy",
-        "shortDescription": "The Hobbit is a beloved fantasy novel that takes readers on a journey to Middle-earth with Bilbo Baggins. Bilbo embarks on an epic adventure with dwarves to reclaim their homeland from the dragon Smaug. This enchanting tale introduces readers to the world of hobbits, wizards, and magical creatures.",
-        "ratings": 4.7
-    },
-    {
-        "imageLink": "https://example.com/book-image-6.jpg",
-        "name": "The Catcher in the Rye",
-        "quantity": 10,
-        "authorName": "J.D. Salinger",
-        "category": "Novel",
-        "shortDescription": "The Catcher in the Rye is a coming-of-age novel that follows the adventures of Holden Caulfield in New York City. Holden narrates his experiences, encounters with people, and his observations of society. The book has been both celebrated and challenged for its themes and language.",
-        "ratings": 4.1
-    },
-    {
-        "imageLink": "https://example.com/book-image-8.jpg",
-        "name": "The Da Vinci Code",
-        "quantity": 18,
-        "authorName": "Dan Brown",
-        "category": "Thriller",
-        "shortDescription": "The Da Vinci Code is a thrilling mystery novel that unravels the secrets of the Holy Grail and the mysteries of art and history. Professor Robert Langdon and cryptologist Sophie Neveu embark on a quest to solve a murder and uncover hidden truths. The book combines art, history, and religion in a gripping narrative.",
-        "ratings": 4.0
-    },
-    {
-        "imageLink": "https://example.com/book-image-9.jpg",
-        "name": "War and Peace",
-        "quantity": 25,
-        "authorName": "Leo Tolstoy",
-        "category": "Historical Fiction",
-        "shortDescription": "War and Peace is an epic novel set against the backdrop of the Napoleonic era, featuring a wide array of characters and events. The story explores themes of war, love, and destiny and offers a panoramic view of Russian society during the early 19th century.",
-        "ratings": 4.9
-    },
-    {
-        "imageLink": "https://example.com/book-image-11.jpg",
-        "name": "The Lord of the Rings",
-        "quantity": 16,
-        "authorName": "J.R.R. Tolkien",
-        "category": "Fantasy",
-        "shortDescription": "The Lord of the Rings is a fantasy epic that follows the quest to destroy the One Ring and defeat the dark lord Sauron. With a diverse cast of characters and epic battles, this trilogy is a timeless classic in the world of fantasy literature.",
-        "ratings": 4.8
-    },
-    {
-        "imageLink": "https://example.com/book-image-12.jpg",
-        "name": "Crime and Punishment",
+        "book_name": "Flex 3 in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed.jpg",
+        "author_name": ["Tariq Ahmed with Jon Hirschi", "Faisal Abid"],
+        "category": "Technology",
         "quantity": 9,
-        "authorName": "Fyodor Dostoevsky",
-        "category": "Classics",
-        "shortDescription": "Crime and Punishment is a psychological thriller that delves into the mind of Raskolnikov, a student who commits a brutal crime and grapples with the consequences. The novel explores themes of morality, guilt, and redemption in the gritty streets of St. Petersburg.",
-        "ratings": 4.5
+        "ratings" :3.2,
+        "shortDescription": "A comprehensive book on developing web applications using Flex 3 Technology."
     },
     {
-        "imageLink": "https://example.com/book-image-13.jpg",
-        "name": "The Alchemist",
-        "quantity": 22,
-        "authorName": "Paulo Coelho",
-        "category": "Fiction",
-        "shortDescription": "The Alchemist is a philosophical novel that follows Santiago, a shepherd boy, on a journey to discover his personal legend. The story is a timeless exploration of dreams, destiny, and the pursuit of one's purpose in life.",
-        "ratings": 4.3
+        "book_name": "Flex 4 in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed2.jpg",
+        "author_name": ["Tariq Ahmed", "Dan Orlando", "John C. Bland II", "Joel Hooks"],
+        "category": "Technology",
+        "quantity": 4,
+        "ratings" :3.6,
+        "shortDescription": "An in-depth guide to developing web applications using Flex 4 Technology."
     },
     {
-        "imageLink": "https://example.com/book-image-14.jpg",
-        "name": "The Odyssey",
-        "quantity": 11,
-        "authorName": "Homer",
-        "category": "Epic",
-        "shortDescription": "The Odyssey is an ancient Greek epic that recounts the adventures of Odysseus as he tries to return home after the Trojan War. Along the way, he encounters gods, monsters, and various challenges. It's a classic tale of heroism and perseverance.",
-        "ratings": 4.6
+        "book_name": "Collective Intelligence in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alag.jpg",
+        "author_name": ["Satnam Alag"],
+        "category": "Technology",
+        "quantity": 3,
+        "ratings" :3.7,
+        "shortDescription": "Exploring the principles and practices of collective intelligence in the context of web applications."
     },
     {
-        "imageLink": "https://example.com/book-image-15.jpg",
-        "name": "The Shining",
-        "quantity": 7,
-        "authorName": "Stephen King",
-        "category": "Horror",
-        "shortDescription": "The Shining is a chilling horror novel that tells the story of the Torrance family, who becomes the winter caretakers of the haunted Overlook Hotel. As the supernatural forces of the hotel take hold, the family descends into madness and terror.",
-        "ratings": 4.2
+        "book_name": "Zend Framework in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allen.jpg",
+        "author_name": ["Rob Allen", "Nick Lo", "Steven Brown"],
+        "category": ["Web Development"],
+        "quantity": 4,
+        "ratings" :3.3,
+        "shortDescription": "A practical guide to building web applications using the Zend Framework."
     },
     {
-        "imageLink": "https://example.com/book-image-16.jpg",
-        "name": "Harry Potter and the Sorcerer's Stone",
-        "quantity": 20,
-        "authorName": "J.K. Rowling",
-        "category": "Fantasy",
-        "shortDescription": "The first book in the Harry Potter series introduces readers to the young wizard Harry Potter as he embarks on his magical journey at Hogwarts School of Witchcraft and Wizardry. With its imaginative world and compelling characters, this book became a phenomenon in the world of literature.",
-        "ratings": 4.7
-    }
-]
+        "book_name": "Flex on Java Programming",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allmon.jpg",
+        "author_name": ["Bernerd Allmon", "Jeremy Anderson"],
+        "category": "Technology",
+        "quantity": 2,
+        "ratings" :3.5,
+        "shortDescription": "A guide to integrating Flex with Java Programming for web application development."
+    },
+    {
+        "book_name": "Griffon in Action",
+        "image_link": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/almiray.jpg",
+        "author_name": ["Andres Almiray", "Danno Ferrin", "James Shingler"],
+        "category": "Java Programming",
+        "quantity": 3,
+        "ratings" :3.7,
+        "shortDescription": "An introduction to Griffon, a dynamic Groovy-based web application framework."
+    }]
