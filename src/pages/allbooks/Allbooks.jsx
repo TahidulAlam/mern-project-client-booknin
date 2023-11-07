@@ -39,10 +39,8 @@ const Allbooks = () => {
   if (error) {
     return <p>Error: {error.message}</p>;
   }
-  console.log(booksData);
   return (
     <div>
-      <h1>This is all book page</h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
         {booksData.data?.map((dd) => (
           <Books key={dd._id} bookData={dd}></Books>

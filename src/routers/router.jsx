@@ -9,8 +9,7 @@ import Allbooks from "../pages/allbooks/Allbooks";
 import BorrowedBooks from "../pages/borrowedBooks/BorrowedBooks";
 import LogIn from "../pages/login/LogIn";
 import Registration from "../pages/registration/Registration";
-import axios from "axios";
-import CategoryBasedBooks from "../pages/categoryBasedBooks/CategoryBasedBooks";
+import BookDetails from "../pages/bookDetails/BookDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,8 +29,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/allBooks/:category",
-        // element: <CategoryBasedBooks></CategoryBasedBooks>,
         element: <Allbooks></Allbooks>,
+      },
+      {
+        path: "/booksDetails/:id",
+        element: <BookDetails></BookDetails>,
       },
       {
         path: "/borrowedBooks",
