@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useContext } from "react";
-// import { toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
@@ -14,9 +13,7 @@ import {
 } from "../../components/socialAuth/validation";
 import SocialAuth from "../../components/socialAuth/SocialAuth";
 import useAuth from "../../hooks/useAuth";
-// import useAuth from "../../hooks/useAuth";
 
-// const Swal = new Swal();
 const Registration = () => {
   const { user, createUser, updateUser } = useAuth();
   const [password, setPassword] = useState("");

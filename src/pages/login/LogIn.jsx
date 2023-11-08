@@ -8,10 +8,11 @@ import { isValidEmail } from "../../components/socialAuth/validation";
 import Swal from "sweetalert2";
 import SocialAuth from "../../components/socialAuth/SocialAuth";
 import imgLogIn from "../../assets/images/bookninLogo.png";
+import useAuth from "../../hooks/useAuth";
 // import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
-  // const { signIn } = useAuth();
+  const { signIn } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
   const [password, setPassword] = useState("");
@@ -26,12 +27,12 @@ const Login = () => {
     const password = e.target.password.value;
     if (isValidEmail(email)) {
       Swal("valid");
-      // signIn(email, password)
-      //   .then(() => {
-      //     Swal("Sign In seccessfully", "success");
-      //     navigate(location.state ? location.state : "/");
-      //   })
-      //   .catch((err) => Swal("invalid input", "error"));
+      signIn(email, password)
+        .then(() => {
+          Swal("Sign In seccessfully", "success");
+          navigate(location.state ? location.state : "/");
+        })
+        .catch((err) => Swal("invalid input", "error"));
     } else {
       return Swal("invalid input", "error");
     }
