@@ -4,6 +4,7 @@ import useAuth from "../../hooks/useAuth";
 import Banner from "./banner/Banner";
 import Category from "./category/Category";
 import About from "./about/About";
+import Newsletter from "./Newsletter/Newsletter";
 
 const Home = () => {
   const { username, value } = useAuth();
@@ -21,6 +22,9 @@ const Home = () => {
       </div>
       <div className="pt-10">
         <About></About>
+      </div>
+      <div className="">
+        <Newsletter></Newsletter>
       </div>
     </div>
   );

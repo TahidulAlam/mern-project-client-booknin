@@ -7,8 +7,6 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import useAuth from "../../hooks/useAuth";
 import useDate from "../../hooks/useDate";
-import uuid from "react-uuid";
-// import ReactStarsRating from "react-awesome-stars-rating";
 import Swal from "sweetalert2";
 import Ratings from "../../components/components/Ratings";
 const BookDetails = () => {
@@ -77,7 +75,7 @@ const BookDetails = () => {
       if (res.status === 200) {
         Swal.fire("Book Borrowed Successfully");
       } else {
-        Swal.error("Wrong Something");
+        Swal.error("Books already Borrowed");
       }
     } catch (error) {
       console.log(error);
@@ -121,7 +119,10 @@ const BookDetails = () => {
                   Read the book
                 </button>
                 <dialog id="my_modal_2" className="modal">
-                  <div className="modal-box"></div>
+                  <div className="modal-box">
+                    <img src={image_link} alt="" />
+                    <h1>{shortDescription}</h1>
+                  </div>
                   <form method="dialog" className="modal-backdrop">
                     <button>close</button>
                   </form>

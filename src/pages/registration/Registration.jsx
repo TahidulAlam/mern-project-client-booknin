@@ -30,16 +30,16 @@ const Registration = () => {
     if (isValidEmail(email) && isValidPassword(password)) {
       createUser(email, password).then((res) => {
         if (res.insertedId) {
-          Swal.success("user added");
+          Swal.fire("Registration seccessfully");
         }
       });
     } else {
       if (!isValidEmail(email)) {
-        return Swal.error("invalid email");
+        return Swal.fire("invalid email");
       } else if (!isValidPassword(password)) {
-        return Swal.error("plz use strong password");
+        return Swal.fire("plz use strong password");
       } else {
-        return Swal.error("plz use strong password and proper mail");
+        return Swal.fire("plz use strong password and proper mail");
       }
     }
   };

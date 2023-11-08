@@ -4,7 +4,6 @@ import React from "react";
 import logo from "../../assets/images/bookninLogo.png";
 
 const LogoImg = ({ width }) => {
-  console.log(width);
   return (
     <div>
       <img width={width} src={logo} alt="" />

@@ -5,11 +5,10 @@ import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
 import axios from "axios";
 import Ratings from "../../components/components/Ratings";
-import { useHistory } from "react-router-dom";
+
 const Addbook = () => {
   const { user } = useAuth();
-  const history = useHistory();
-  const url = "http://localhost:5000/api/bn/allbooks";
+  const url = "https://booknin-server.vercel.app/api/bn/allbooks";
   const [ratings, setRatings] = useState(3);
 
   const handleStarClick = (newRatings) => {
@@ -40,7 +39,6 @@ const Addbook = () => {
       const result = response.data;
       if (result.acknowledged) {
         Swal.fire("Book added successfully");
-        history.push("/allbooks");
       } else {
         Swal.fire("Failed to add the book");
       }

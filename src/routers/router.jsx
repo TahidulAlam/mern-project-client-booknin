@@ -12,10 +12,12 @@ import Registration from "../pages/registration/Registration";
 import BookDetails from "../pages/bookDetails/BookDetails";
 import UpdateBoooks from "../pages/updatebook/UpdateBoooks";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../error/ErrorPage";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,
@@ -43,7 +45,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/booksDetails/:id",
-        element: <BookDetails></BookDetails>,
+        element: (
+          <PrivateRoute>
+            <BookDetails></BookDetails>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/updateBooks/:id",

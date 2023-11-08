@@ -19,10 +19,10 @@ const SocialAuth = () => {
   const handleSocialSignIn = (media) => {
     media()
       .then(() => {
-        Swal.success("Sign In seccessfully");
+        Swal.fire("Sign In seccessfully");
         navigate(location.state ? location.state : "/");
       })
-      .catch((err) => Swal.error("invalid input"));
+      .catch((err) => Swal.fire("invalid input"));
   };
 
   return (

@@ -36,7 +36,7 @@ const BorrowedBooks = () => {
   if (error) {
     return <p>Error: {error.message}</p>;
   }
-  const books = Array.isArray(bookData.data) ? bookData.data : [];
+  const books = Array.isArray(bookData?.data) ? bookData.data : [];
   return (
     <div>
       <div className="mt-5">
@@ -57,8 +57,8 @@ const BorrowedBooks = () => {
             />
           </>
         ) : (
-          <div>
-            <table className="table table-auto text-white flex flex-col gap-5 justify-between dark:bg-sky-800 rounded-lg p-5 overflow-scroll lg:overflow-auto bg-white">
+          <div className="overflow-x-auto">
+            <table className="table table-auto text-white flex flex-col gap-5 justify-between dark:bg-sky-800 rounded-lg p-5 overflow-x-scroll lg:overflow-auto bg-white min-w-full">
               <thead>
                 <tr className="flex flex-row gap-24 justify-between pb-2 dark:text-white text-sky-950">
                   <th>Image</th>

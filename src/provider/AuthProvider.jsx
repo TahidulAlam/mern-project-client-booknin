@@ -10,11 +10,12 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
-
+import useAxios from "../hooks/useAxios";
 export const AuthContext = createContext();
 
 // auth
 const AuthProvider = ({ children }) => {
+  const axiosInstance = useAxios();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
@@ -31,16 +32,36 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, googleProvider);
   };
   const signInOut = () => {
+    setLoading(true);
     return signOut(auth);
   };
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUser(user);
+    // const unsubscribe = onAuthStateChanged(auth, (user) => {
+    //   setUser(user);
+    //   setLoading(false);
+    // });
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      const userEmail = currentUser?.email || user?.email;
+      const loggedUser = { email: userEmail };
+      console.log("newUser", loggedUser);
+      setUser(currentUser);
+      console.log("current user", currentUser);
       setLoading(false);
+      if (currentUser) {
+        axiosInstance.post("/jwt", loggedUser).then((res) => {
+          console.log("token response", res.data);
+        });
+      } else {
+        axiosInstance.post("/signInOut", loggedUser).then((res) => {
+          console.log(res.data);
+        });
+      }
     });
 
-    return () => unsubscribe();
-  }, []);
+    return () => {
+      unsubscribe();
+    };
+  }, [axiosInstance, user?.email]);
   const providerInfo = {
     createUser,
     signIn,

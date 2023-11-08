@@ -9,9 +9,11 @@ import Swal from "sweetalert2";
 import SocialAuth from "../../components/socialAuth/SocialAuth";
 import imgLogIn from "../../assets/images/bookninLogo.png";
 import useAuth from "../../hooks/useAuth";
+import useAxios from "../../hooks/useAxios";
 // import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
+  const axiosInstance = useAxios();
   const { signIn } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
@@ -21,15 +23,19 @@ const Login = () => {
   const togglePasswordVisibility = () => {
     setShowPassword((prevState) => !prevState);
   };
-  const handleSignIn = (e) => {
+  const handleSignIn = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
     if (isValidEmail(email)) {
-      Swal("valid");
       signIn(email, password)
-        .then(() => {
-          Swal("Sign In seccessfully", "success");
+        .then(async () => {
+          try {
+            const response = await axiosInstance.post("/jwt", { email });
+            Swal.fire("Log In successfully");
+          } catch (error) {
+            console.log(error);
+          }
           navigate(location.state ? location.state : "/");
         })
         .catch((err) => Swal("invalid input", "error"));

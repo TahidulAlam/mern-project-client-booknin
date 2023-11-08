@@ -6,10 +6,8 @@ import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import useAxios from "../../hooks/useAxios";
 import Ratings from "../../components/components/Ratings";
-import { useHistory } from "react-router-dom";
 const UpdateBoooks = () => {
   const axiosInstance = useAxios();
-  const history = useHistory();
   const { id } = useParams();
   const [newratings, setNewRatings] = useState(3);
   const handleStarClick = (newRatings) => {
@@ -77,7 +75,6 @@ const UpdateBoooks = () => {
       const result = response.data;
       if (result.acknowledged) {
         Swal.fire("Book updated successfully");
-        history.push("/allbooks");
       } else {
         Swal.fire("Failed to update the book");
       }
