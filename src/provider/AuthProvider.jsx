@@ -9,6 +9,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import useAxios from "../hooks/useAxios";
 export const AuthContext = createContext();
@@ -35,6 +36,11 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     return signOut(auth);
   };
+  const updateUser = (name) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+    });
+  };
   useEffect(() => {
     // const unsubscribe = onAuthStateChanged(auth, (user) => {
     //   setUser(user);
@@ -53,7 +59,7 @@ const AuthProvider = ({ children }) => {
         });
       } else {
         axiosInstance.post("/signInOut", loggedUser).then((res) => {
-          console.log(res.data);
+          console.log("Sign out", res.data);
         });
       }
     });
@@ -69,6 +75,7 @@ const AuthProvider = ({ children }) => {
     signInWithGoogle,
     user,
     loading,
+    updateUser,
   };
   return (
     <AuthContext.Provider value={providerInfo}>{children}</AuthContext.Provider>

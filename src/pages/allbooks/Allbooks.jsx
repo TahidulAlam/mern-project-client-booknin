@@ -54,19 +54,17 @@ const Allbooks = () => {
   if (error) {
     return <p>Error: {error.message}</p>;
   }
-
-  // Use filteredBooks when available, otherwise use booksData
   const displayData = filteredBooks.length > 0 ? filteredBooks : booksData.data;
 
   return (
     <div>
-      <div className="flex justify-center items-center">
-        <img width={"300px"} className="p-5" src={banLogo} alt="" />
+      <div className="flex justify-center items-center flex-wrap p-5">
+        <img className="p-5 lg:w-[300px] w-[200px]" src={banLogo} alt="" />
         <button
           onClick={handleSortByQuantity}
-          className="btn btn-primary dark:bg-sky-200 border-none bg-[#47B8C1] hover:bg-sky-800 dark:hover:bg-sky-900 dark:text-sky-950 dark:hover:text-sky-200 text-sky-950 hover:text-sky-200"
+          className="btn lg:btn-md btn-sm dark:bg-sky-200 border-none bg-[#47B8C1] hover:bg-sky-800 dark:hover:bg-sky-900 dark:text-sky-950 dark:hover:text-sky-200 text-sky-950 hover:text-sky-200"
         >
-          Sort by Quantity (High to Low)
+          Filter
         </button>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">

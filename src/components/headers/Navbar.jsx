@@ -10,6 +10,7 @@ import useAuth from "../../hooks/useAuth";
 const Navbar = () => {
   const logowidth = "130px";
   const { user, signInOut } = useAuth();
+  // console.log(user.displayName);
   const navLink = (
     <>
       <li className="hidden lg:block">

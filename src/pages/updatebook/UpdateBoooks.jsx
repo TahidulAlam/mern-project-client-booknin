@@ -2,11 +2,12 @@
 import React, { useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
-import { Navigate, useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import useAxios from "../../hooks/useAxios";
 import Ratings from "../../components/components/Ratings";
 const UpdateBoooks = () => {
+  const navigate = useNavigate();
   const axiosInstance = useAxios();
   const { id } = useParams();
   const [newratings, setNewRatings] = useState(3);
@@ -75,6 +76,7 @@ const UpdateBoooks = () => {
       const result = response.data;
       if (result.acknowledged) {
         Swal.fire("Book updated successfully");
+        navigate(-1);
       } else {
         Swal.fire("Failed to update the book");
       }
@@ -90,6 +92,7 @@ const UpdateBoooks = () => {
           Update the books
         </h1>
       </div>
+
       <form
         className="w-full max-w-2xl mx-auto max-h-screen m-5"
         onSubmit={handleUpdateBook}

@@ -4,7 +4,7 @@ import banLogo from "../../assets/images/bookninLogo.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-20 flex justify-around bg-sky-50 dark:text-sky-200 text-sky-950 dark:bg-sky-800">
+      <footer className="footer p-20 flex justify-around bg-sky-50 dark:text-sky-200 text-sky-950 dark:bg-sky-800 mt-auto">
         <aside>
           <img className="w-[250px]" src={banLogo} alt="" />
           <p>

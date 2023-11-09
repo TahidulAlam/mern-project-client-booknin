@@ -3,12 +3,14 @@
 import React from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import useAxios from "../../hooks/useAxios";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import { PDFViewer } from "@react-pdf/renderer";
 import useAuth from "../../hooks/useAuth";
 import useDate from "../../hooks/useDate";
 import Swal from "sweetalert2";
 import Ratings from "../../components/components/Ratings";
+import PdfBook from "./PdfBook";
 const BookDetails = () => {
   const axiosInstance = useAxios();
   const borrowed_date = useDate();
@@ -72,44 +74,42 @@ const BookDetails = () => {
       const url = `/api/bn/borrowedBooks`;
       const res = await axiosInstance.post(url, formData);
       document.getElementById("my_modal_1").close();
-      if (res.status === 200) {
-        Swal.fire("Book Borrowed Successfully");
+      if (res.data.alreadyBorrowed) {
+        Swal.fire("already Borrowed");
       } else {
-        Swal.error("Books already Borrowed");
+        Swal.fire("Book Borrowed Successfully");
       }
     } catch (error) {
-      console.log(error);
+      document.getElementById("my_modal_1").close();
+      if (error.response && error.response.status === 400) {
+        Swal.fire("already borrowed this book");
+      } else {
+        Swal.fire("An error occurred while processing the request");
+      }
     }
   };
   return (
     <div>
-      <div
-        className="bg-cover bg-center bg-no-repeat h-64 md:h-96 lg:h-screen mt-10"
-        style={{ backgroundImage: image_link }}
-      >
-        <div className="flex flex-col justify-center items-center">
-          <div className="grid lg:grid-cols-2 grid-cols-1 dark:text-sky-100 gap-5">
-            <div>
+      <div className="">
+        <div>
+          <div className="grid lg:grid-cols-2 grid-cols-1 dark:text-sky-100 lg:gap-5 gap-2 mt-14 dark:bg-sky-800 mb-20 p-10 rounded-lg bg-white">
+            <div className="lg:w-1/2 mx-auto w-full flex justify-center items-center">
               <img
                 className="lg:w-[350px] w-[200px] mx-auto"
                 src={image_link}
                 alt=""
               />
             </div>
-            <div className="flex flex-col gap-5">
-              <h1 className="font-bold text-4xl">{book_name}</h1>
+            <div className="flex flex-col lg:gap-5 gap-2 lg:m-10 m-5">
+              <h1 className="font-bold lg:text-4xl text-2xl">{book_name}</h1>
               <h1>Category:{category}</h1>
               <h1>Author Name: {author_name}</h1>
               <p>Quantity: {quantity}</p>
               <div className="flex flex-row">
-                {/* <ReactStarsRating value={ratings} style={{ display: "flex" }} /> */}
                 <Ratings ratings={ratings} totalStars={5} />
               </div>
-              <p>{shortDescription}</p>
+              {/* <p>{shortDescription}</p> */}
               <div className="flex gap-5">
-                {/* <button className="btn btn-primary dark:bg-sky-200 dark:text-sky-950 border-none bg-sky-950 hover:bg-sky-800 text-white">
-                  Read the book
-                </button> */}
                 <button
                   className="btn btn-primary dark:bg-sky-200 dark:text-sky-950 border-none bg-sky-950 hover:bg-sky-800 text-white"
                   onClick={() =>
@@ -119,9 +119,10 @@ const BookDetails = () => {
                   Read the book
                 </button>
                 <dialog id="my_modal_2" className="modal">
-                  <div className="modal-box">
-                    <img src={image_link} alt="" />
-                    <h1>{shortDescription}</h1>
+                  <div className="modal-box max-h-[450px] w-11/12 max-w-[850px]">
+                    <PDFViewer style={{ width: "800px", height: "400px" }}>
+                      <PdfBook data={shortDescription}></PdfBook>
+                    </PDFViewer>
                   </div>
                   <form method="dialog" className="modal-backdrop">
                     <button>close</button>
@@ -188,6 +189,7 @@ const BookDetails = () => {
                                 name="return_date"
                                 id=""
                                 className="p-2 w-[80%]"
+                                required
                               />
                             </div>
                             <button className="btn btn-primary dark:bg-sky-200 border-none bg-[#47B8C1] hover:bg-sky-800 dark:hover:bg-sky-900 dark:text-sky-950 dark:hover:text-sky-200 text-sky-950 hover:text-sky-200">

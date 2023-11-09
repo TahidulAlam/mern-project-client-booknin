@@ -12,7 +12,9 @@ const MainLayouts = ({ children }) => {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col w-[90vw] mx-auto">
           <Navbar></Navbar>
-          <div className="mt-16">{children}</div>
+          <div className="mt-16 mb-16 flex flex-col min-h-screen">
+            {children}
+          </div>
         </div>
         <div className="drawer-side">
           <label

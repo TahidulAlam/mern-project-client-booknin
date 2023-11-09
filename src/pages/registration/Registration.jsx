@@ -29,9 +29,8 @@ const Registration = () => {
     const password = e.target.password.value;
     if (isValidEmail(email) && isValidPassword(password)) {
       createUser(email, password).then((res) => {
-        if (res.insertedId) {
-          Swal.fire("Registration seccessfully");
-        }
+        updateUser(name).then(() => Swal.fire("account create seccessfully"));
+        navigate(location.state ? location.state : "/");
       });
     } else {
       if (!isValidEmail(email)) {

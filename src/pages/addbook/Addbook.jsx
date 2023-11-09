@@ -8,7 +8,8 @@ import Ratings from "../../components/components/Ratings";
 
 const Addbook = () => {
   const { user } = useAuth();
-  const url = "https://booknin-server.vercel.app/api/bn/allbooks";
+  // const url = "https://booknin-server.vercel.app/api/bn/allbooks";
+  const url = "http://localhost:5000/allbooks";
   const [ratings, setRatings] = useState(3);
 
   const handleStarClick = (newRatings) => {
@@ -49,7 +50,7 @@ const Addbook = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center p-3">
+      <div className="flex justify-center items-center p-3 mb-20">
         <h1 className="text-4xl font-bold dark:text-sky-200">Add your books</h1>
       </div>
       <form
